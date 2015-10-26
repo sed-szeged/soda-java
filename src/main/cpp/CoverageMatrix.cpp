@@ -5,12 +5,6 @@
 
 using namespace soda;
 
-void Java_hu_sed_soda_data_CoverageMatrix_initialise(JNIEnv *env, jobject obj)
-{
-    CCoverageMatrix *matrix = new CCoverageMatrix();
-    setHandle(env, obj, matrix);
-}
-
 void Java_hu_sed_soda_data_CoverageMatrix_addTestcaseName(JNIEnv *env, jobject obj, jstring testCaseName)
 {
     CCoverageMatrix *matrix = getHandle<CCoverageMatrix>(env, obj);
@@ -48,4 +42,10 @@ void Java_hu_sed_soda_data_CoverageMatrix_save(JNIEnv *env, jobject obj, jstring
     CCoverageMatrix *matrix = getHandle<CCoverageMatrix>(env, obj);
     const char *nameStr = env->GetStringUTFChars(fileName, 0);
     matrix->save(nameStr);
+}
+
+void Java_hu_sed_soda_data_CoverageMatrix_initialise(JNIEnv *env, jobject obj)
+{
+    CCoverageMatrix *matrix = new CCoverageMatrix();
+    setHandle(env, obj, matrix);
 }
