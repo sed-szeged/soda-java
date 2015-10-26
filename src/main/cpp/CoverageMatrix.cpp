@@ -44,6 +44,14 @@ void Java_hu_sed_soda_data_CoverageMatrix_save(JNIEnv *env, jobject obj, jstring
     matrix->save(nameStr);
 }
 
+void
+Java_hu_sed_soda_data_CoverageMatrix_dispose(JNIEnv *env, jobject obj)
+{
+    CCoverageMatrix *matrix = getHandle<CCoverageMatrix>(env, obj);
+    setHandle<CCoverageMatrix>(env, obj, NULL);
+    delete matrix;
+}
+
 void Java_hu_sed_soda_data_CoverageMatrix_initialise(JNIEnv *env, jobject obj)
 {
     CCoverageMatrix *matrix = new CCoverageMatrix();

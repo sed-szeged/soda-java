@@ -52,6 +52,14 @@ JNIEXPORT void JNICALL Java_hu_sed_soda_data_CoverageMatrix_save
  * Method:    initialise
  * Signature: ()V
  */
+JNIEXPORT void JNICALL Java_hu_sed_soda_data_CoverageMatrix_dispose
+  (JNIEnv *, jobject);
+
+/*
+ * Class:     hu_sed_soda_data_CoverageMatrix
+ * Method:    initialise
+ * Signature: ()V
+ */
 JNIEXPORT void JNICALL Java_hu_sed_soda_data_CoverageMatrix_initialise
   (JNIEnv *, jobject);
 

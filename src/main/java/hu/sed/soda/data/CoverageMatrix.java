@@ -13,6 +13,8 @@ public class CoverageMatrix {
     public native void setRelation(String testCaseName, String codeElementName, boolean isCovered);
     public native void save(String fileName);
 
+    public native void dispose();
+
     private native void initialise();
 
 }
