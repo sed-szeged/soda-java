@@ -26,3 +26,7 @@ cd build
 cmake ..
 make
 ```
+
+### Example
+
+You can find an example in our [wiki](https://github.com/sed-szeged/soda-java/wiki/Example-usage-of-CoverageMatrix).
