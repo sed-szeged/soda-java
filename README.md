@@ -15,7 +15,7 @@ This project contains Java classes and the corresponding JNI C++ code.
 Build and package the Java classes:
 
 ```bash
-mvn clean compile package
+mvn clean install
 ```
 
 Build the C++ JNI code
