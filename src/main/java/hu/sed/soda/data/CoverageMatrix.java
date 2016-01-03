@@ -44,18 +44,18 @@ public class CoverageMatrix {
 
     /**
      * Saves the matrix to the specified location.
-     * @param fileName The path where tha matrix will be saved to.
+     * @param fileName The path where the matrix will be saved to.
      */
     public native void save(String fileName);
 
     /**
      * Cleans up the memory on the native side.
-     * Must be called manually!
+     * <b>Must be called manually!</b>
      */
     public native void dispose();
 
     /**
-     * Initialise the Coverage matrix on the native side.
+     * Initialises the Coverage matrix on the native side.
      */
     private native void initialise();
 

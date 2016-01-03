@@ -1,6 +1,6 @@
 #include "hu_sed_soda_data_CoverageMatrix.h"
-#include <data/CCoverageMatrix.h>
 #include "handle.h"
+#include <data/CCoverageMatrix.h>
 #include <string>
 
 using namespace soda;
@@ -44,8 +44,7 @@ void Java_hu_sed_soda_data_CoverageMatrix_save(JNIEnv *env, jobject obj, jstring
     matrix->save(nameStr);
 }
 
-void
-Java_hu_sed_soda_data_CoverageMatrix_dispose(JNIEnv *env, jobject obj)
+void Java_hu_sed_soda_data_CoverageMatrix_dispose(JNIEnv *env, jobject obj)
 {
     CCoverageMatrix *matrix = getHandle<CCoverageMatrix>(env, obj);
     setHandle<CCoverageMatrix>(env, obj, NULL);
