@@ -29,7 +29,7 @@ public class ResultsMatrix {
 
     /**
      * Adds a new test case to the matrix.
-     * <b>Does not increase the coverage bit matrix! You must resize it manually.</b>
+     * <b>Does not increase the results matrix! You must resize it manually.</b>
      * @see #refitMatrixSize()
      * 
      * @param testCaseName The name of the test case.
@@ -38,10 +38,10 @@ public class ResultsMatrix {
 
     /**
      * Adds a new revision number to the matrix.
-     * <b>Does not increase the coverage bit matrix! You must resize it manually.</b>
+     * <b>Does not increase the results matrix! You must resize it manually.</b>
      * @see #refitMatrixSize()
      * 
-     * @param revisionNumber The name of the code element.
+     * @param revisionNumber The revision number.
      */
     public native void addRevisionNumber(int revisionNumber);
 
