@@ -10,7 +10,7 @@ void Java_hu_sed_soda_data_Changeset_addCodeElement(JNIEnv *env, jobject obj, js
     CChangeset *matrix = getHandle<CChangeset>(env, obj);
     const char *nameStr = env->GetStringUTFChars(codeElementName, 0);
     std::string ceName = std::string(nameStr);
-    matrix->addCodeElement(ceName);
+    matrix->addCodeElementName(ceName);
 }
 
 void Java_hu_sed_soda_data_Changeset_addRevision(JNIEnv *env, jobject obj, jint revisionNumber)

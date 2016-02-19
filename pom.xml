@@ -6,7 +6,7 @@
 
     <groupId>soda-java</groupId>
     <artifactId>soda-java</artifactId>
-    <version>0.1</version>
+    <version>0.2</version>
 
     <!-- Output to jar format -->
 	  <packaging>jar</packaging>
