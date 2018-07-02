@@ -24,6 +24,7 @@ Build the C++ JNI code
 mkdir build
 cd build
 cmake ..
+make SoDA
 make
 ```
 
